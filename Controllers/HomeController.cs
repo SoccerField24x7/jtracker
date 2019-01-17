@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using JesseTest.Models;
+using mysqlefcore;
 
 namespace JesseTest.Controllers
 {
@@ -18,6 +19,20 @@ namespace JesseTest.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+
+            using (var context = new JTContext())
+            {
+                var entry = new Log {
+                    LogLevel = 3,
+                    SourcePage = "UNKNOWN",
+                    SQL = "",
+                    Message = "blah",
+                    Generated = DateTime.Now,
+                };
+
+                context.Add(entry);
+                context.SaveChanges();
+            }
 
             return View();
         }
