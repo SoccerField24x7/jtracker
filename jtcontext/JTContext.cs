@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MySql.Data.EntityFrameworkCore.Extensions;
+﻿using JTracker.jtcontext.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace mysqlefcore
+namespace JTracker.jtcontext
 {
     public class JTContext : DbContext
     {
