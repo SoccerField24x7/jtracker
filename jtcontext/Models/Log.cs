@@ -1,15 +1,15 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mysqlefcore
+namespace JTracker.jtcontext.Models
 {
     [Table("Log")]
     public class Log
     {
         public long LogId { get; set; }
 
-        public short LogLevel { get; set; }
+        public byte LogLevel { get; set; }
 
         [Column(TypeName = "text")]
         public string SourcePage { get; set; }
@@ -23,7 +23,7 @@ namespace mysqlefcore
         [DataType(DataType.DateTime)]
         public DateTime Generated { get; set; }
 
-        public short Dispositioned { get; set; }
+        public byte Dispositioned { get; set; }
 
         public DateTime? DispositionDate { get; set; }
     }

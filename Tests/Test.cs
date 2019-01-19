@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
-using System;
-namespace Tests
+
+namespace JTracker.Tests
 {
     [TestFixture()]
     public class Test

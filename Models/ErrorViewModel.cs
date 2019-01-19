@@ -1,6 +1,4 @@
-using System;
-
-namespace JesseTest.Models
+namespace JTracker.Models
 {
     public class ErrorViewModel
     {

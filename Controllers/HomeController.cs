@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using JTracker.jtcontext;
+using JTracker.jtcontext.Models;
+using JTracker.Models;
 using Microsoft.AspNetCore.Mvc;
-using JesseTest.Models;
-using mysqlefcore;
 
-namespace JesseTest.Controllers
+namespace JTracker.Controllers
 {
     public class HomeController : Controller
     {
