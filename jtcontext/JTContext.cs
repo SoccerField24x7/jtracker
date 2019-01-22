@@ -6,6 +6,7 @@ namespace JTracker.jtcontext
     public class JTContext : DbContext
     {
         public DbSet<Log> Log { get; set; }
+        public DbSet<Config> Config { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

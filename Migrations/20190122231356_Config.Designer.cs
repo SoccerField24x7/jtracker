@@ -3,14 +3,16 @@ using System;
 using JTracker.jtcontext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JTracker.Migrations
 {
     [DbContext(typeof(JTContext))]
-    partial class JTContextModelSnapshot : ModelSnapshot
+    [Migration("20190122231356_Config")]
+    partial class Config
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
